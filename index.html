@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boricua AC, Dallas-Fort Worth, TX | KezTech Demo Concept</title>
+<style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#1d2733;background:#f5f8fb;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.banner{background:#0f2a44;color:#fff;text-align:center;padding:12px 16px;font-size:14px}
+.hero{background:linear-gradient(135deg,#0f2a44,#1d6fb8);color:#fff;padding:64px 0 56px}
+.hero h1{font-size:44px;line-height:1.1;margin:8px 0}.hero p{font-size:19px;max-width:720px;opacity:.95}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:13px}
+.btn{display:inline-block;background:#ffb703;color:#0f2a44;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:700}
+.hours{background:#fff3c4;border:1px solid #e6c87a;border-radius:10px;padding:12px 16px;margin-top:18px;color:#3d3200}
+section{padding:44px 0}h2{font-size:32px;margin:0 0 10px}.muted{color:#55606c}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.card{border:1px solid #dbe4ec;background:#fff;border-radius:14px;padding:22px}
+.card.good{border-top:6px solid #1d7a4d}.card.old{border-top:6px solid #9aa7b3}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.feature{background:#fff;border:1px solid #dbe4ec;border-radius:14px;padding:20px}
+form{background:#fff;border:1px solid #dbe4ec;border-radius:16px;padding:26px;margin-top:18px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #b9c6d2;border-radius:8px;font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+button{background:#0f2a44;color:#fff;border:0;padding:14px 24px;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer}
+.confirm{display:none;background:#eaf5ee;border:1px solid #1d7a4d;border-radius:12px;padding:20px;margin-top:18px}
+.confirm h3{margin-top:0}.note{font-size:14px;color:#55606c}
+.faq details{background:#fff;border:1px solid #dbe4ec;border-radius:10px;padding:14px 18px;margin:10px 0}
+footer{border-top:1px solid #dbe4ec;padding:24px 0 40px;color:#55606c;font-size:14px}
+@media(max-width:700px){.grid,.features,.two,.three{grid-template-columns:1fr}.hero h1{font-size:34px}}</style>
+</head>
+<body>
+<div class="banner">KezTech Solution demo concept for Boricua AC. This is not the official site.</div>
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Boricua AC &middot; Dallas-Fort Worth, TX &middot; Family owned, serving DFW since 2016</p>
+<h1>Need AC or heating help? Request a quote online in one minute.</h1>
+<p>Describe the installation or repair, add your home details, and pick a preferred day and time window. Your request is written down with a reference, instead of starting only with a phone call or an email.</p>
+<p><a class="btn" href="#request">Request service or a quote</a></p>
+<div class="hours"><strong>Hours listed:</strong> Open 24 hours, 7 days a week <strong>Phone:</strong> (817) 231-1548. <strong>Address:</strong> DFW, Texas (no street address published on the homepage).</div>
+</div></header>
+
+<main class="wrap">
+<section>
+<h2>Before vs this demo</h2>
+<p class="muted">This demo fixes one gap only: the homepage pushes phone (817) 231-1548 and email only, with no form. The page says a quote is "just a click away", but no quote form was visible on the page.</p>
+<div class="grid">
+<div class="card old"><h3>Before</h3><p><strong>Call or email first</strong></p><p>To request a quote, a customer had to call the shop or send an email and explain the job by phone, with nothing written down to refer back to.</p></div>
+<div class="card good"><h3>This demo</h3><p><strong>One service or quote request form</strong></p><p>Pick the service, describe the job, and choose a preferred day and time window. The confirmation shows on screen right away, with a reference to keep.</p></div>
+</div>
+</section>
+
+<section>
+<h2>What the request covers</h2>
+<div class="features">
+<div class="feature"><h3>AC installation</h3><p>AC installation for split units, central air, and commercial systems, with room to describe the space and the system you need.</p></div><div class="feature"><h3>Repair service</h3><p>Fast diagnostics and repair for all major brands, with room to describe leaks, electrical issues, or cooling failures.</p></div><div class="feature"><h3>Maintenance, heating, and thermostats</h3><p>Maintenance and tune-ups, heating service, smart thermostat control, and 24/7 emergency service.</p></div>
+</div>
+</section>
+
+<section id="request">
+<h2>Service or quote request</h2>
+<p class="muted">Fill in what you know. For an urgent breakdown, call the shop directly as well.</p>
+<form id="form">
+<div class="two">
+<div><label for="name">Full name *</label><input id="name" required></div>
+<div><label for="phone">Phone *</label><input id="phone" type="tel" required></div>
+</div>
+<div class="two">
+<div><label for="email">Email</label><input id="email" type="email"></div>
+<div><label for="service">Service needed *</label><select id="service" required>
+<option value="">Choose one</option><option>AC installation</option><option>AC repair</option><option>Maintenance and tune-up</option><option>Heating service</option><option>Smart thermostat</option><option>Commercial HVAC</option><option>24/7 emergency service</option><option>Other</option>
+</select></div>
+</div>
+<div>
+<label for="address">Service address</label><input id="address" placeholder="Street address, city, and ZIP">
+</div>
+<div class="two">
+<div><label for="day">Preferred day *</label><input id="day" type="date" required></div>
+<div><label for="window">Preferred time window *</label><select id="window" required>
+<option value="">Choose one</option><option>Morning, 8 AM to 12 PM</option><option>Afternoon, 12 PM to 4 PM</option><option>Evening, 4 PM to 7 PM</option><option>Any time that day</option>
+</select></div>
+</div>
+<label for="msg">Describe the problem or the work needed</label>
+<textarea id="msg" rows="4" placeholder="For example: the system is not cooling, the unit makes a noise, or you need a replacement quote."></textarea>
+<p><button type="submit">Send service or quote request</button></p>
+<p class="note">Demo form only. Nothing is sent to a server. On a live site, this would go straight to the Boricua AC team.</p>
+</form>
+<div class="confirm" id="confirm"><h3>Request received</h3><p><strong>Reference:</strong> <span id="ref"></span></p><p id="summary"></p><p>Thank you. On a live site, the Boricua AC team would reply to confirm the next step and timing.</p></div>
+</section>
+
+<section class="faq">
+<h2>Common questions</h2>
+<details><summary><strong>Is this the official Boricua AC website?</strong></summary><p>No. This is a demo concept built by KezTech Solution to show how a service or quote request form could work. It is not the official site for Boricua AC.</p></details>
+<details><summary><strong>What services are listed?</strong></summary><p>AC installation, repair service, maintenance and tune-ups, heating service, smart thermostat control, commercial HVAC, and 24/7 emergency service.</p></details>
+<details><summary><strong>What are the hours?</strong></summary><p>Open 24 hours, 7 days a week</p></details>
+<details><summary><strong>Does this form guarantee an appointment or a quote?</strong></summary><p>No. This is a request, not a booking. On a live version, the team would confirm availability, timing, and next steps.</p></details>
+</section>
+</main>
+
+<footer><div class="wrap">
+<p>KezTech Solution demo concept for Boricua AC, Dallas-Fort Worth, TX. This page is a front-end demo only. Nothing submitted here is sent to a server or to the business.</p>
+<p>Phone: (817) 231-1548. Family owned, serving DFW since 2016.</p>
+<p>Our work: <a href="https://keztech-portfolio.vercel.app">keztech-portfolio.vercel.app</a></p>
+</div></footer>
+
+<script>
+document.getElementById('form').addEventListener('submit', function(e){
+e.preventDefault();
+var ref='BO-'+Math.random().toString(36).slice(2,7).toUpperCase();
+document.getElementById('ref').textContent=ref;
+document.getElementById('summary').textContent='Thank you, '+document.getElementById('name').value+'. Your request for '+document.getElementById('service').value+' on '+document.getElementById('day').value+' in the '+document.getElementById('window').value+' window has been noted in this demo.';
+var c=document.getElementById('confirm'); c.style.display='block'; c.scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
